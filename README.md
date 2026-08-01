@@ -68,17 +68,19 @@ service (e.g. Formspree, Web3Forms) or an email backend in
 
 ## Deploying
 
-This is a static site — it builds to `dist/` and can be hosted free on **Vercel**
-(recommended), Netlify, Cloudflare Pages, or Firebase Hosting.
+This is a static site — it builds to `dist/` and can be hosted free on **GitHub Pages**,
+**Vercel**, Netlify, Cloudflare Pages, or Firebase Hosting.
 
-**Vercel (recommended):**
+### GitHub Pages
 
-1. Push this repo to GitHub.
-2. Import it at [vercel.com/new](https://vercel.com/new) — it auto-detects Vite
-   (build: `npm run build`, output: `dist`).
-3. Every push to `main` auto-deploys.
+1. Push this repository to GitHub.
+2. Open the repository settings and enable GitHub Pages with the "GitHub Actions"
+   source.
+3. The included workflow will build and publish the site automatically on every push to
+   `main`.
 
-Or from the CLI: `npm i -g vercel && vercel`.
+The deployment workflow uses the repository name in the asset base path, so the site
+will load correctly at `https://<username>.github.io/<repo-name>/`.
 
 ---
 

@@ -2,11 +2,12 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
+const repoBase = process.env.VITE_BASE || "/";
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  // Works at any path: "/" locally & on Vercel/Netlify, "/<repo>/" on GitHub
-  // Pages (the deploy workflow sets VITE_BASE automatically).
-  base: process.env.VITE_BASE || "/",
+  // Works at any path locally, and uses the repo subpath on GitHub Pages.
+  base: repoBase,
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {
