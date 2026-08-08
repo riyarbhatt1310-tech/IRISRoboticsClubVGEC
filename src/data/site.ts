@@ -105,9 +105,6 @@ export const site = {
     { id: "teams", label: "Teams" },
     { id: "gallery", label: "Gallery" },
     { id: "members", label: "Team" },
-    { id: "achievements", label: "Wins" },
-    { id: "events", label: "Events" },
-    { id: "sponsors", label: "Sponsors" },
     { id: "contact", label: "Contact" },
   ] as NavItem[],
 
@@ -296,55 +293,7 @@ export const site = {
     },
   ] as Mentor[],
 
-  /* ---------- achievements timeline ---------- */
-  achievements: [
-    { year: "2024", title: "Robocon National Finalists", detail: "Placed in the top 8 teams nationwide at DD Robocon." },
-    { year: "2023", title: "Smart India Hackathon Winners", detail: "Grand finale winners for an autonomous inspection robot." },
-    { year: "2022", title: "e-Yantra Top 10", detail: "Ranked among the top 10 teams in IIT Bombay's e-Yantra." },
-    { year: "2021", title: "RoboWars Regional Champions", detail: "Won the west-zone combat robotics championship." },
-    { year: "2019", title: "Best Innovation Award", detail: "Recognised for the Atlas autonomous rover prototype." },
-  ] as Achievement[],
-
-  /* ---------- events & workshops ---------- */
-  events: [
-    {
-      date: "MAR 2026",
-      title: "RoboGenesis '26",
-      type: "Flagship Fest",
-      description: "Our annual robotics festival — competitions, exhibitions, and guest talks across two days.",
-    },
-    {
-      date: "FEB 2026",
-      title: "Intro to ROS2 Bootcamp",
-      type: "Workshop",
-      description: "A hands-on weekend building your first autonomous robot with ROS2 and simulation.",
-    },
-    {
-      date: "JAN 2026",
-      title: "PCB Design Masterclass",
-      type: "Workshop",
-      description: "From schematic to fabricated board — design your own custom electronics.",
-    },
-    {
-      date: "NOV 2025",
-      title: "AI in Robotics — Guest Talk",
-      type: "Talk",
-      description: "Industry experts on how modern AI is reshaping autonomous systems.",
-    },
-  ] as EventItem[],
-
-  /* ---------- sponsors ---------- */
-  sponsors: [
-    { name: "TechNova", tier: "Platinum", logo: img("sp-technova", 300, 150) },
-    { name: "CircuitLabs", tier: "Platinum", logo: img("sp-circuitlabs", 300, 150) },
-    { name: "MechWorks", tier: "Gold", logo: img("sp-mechworks", 300, 150) },
-    { name: "DroneX", tier: "Gold", logo: img("sp-dronex", 300, 150) },
-    { name: "ByteForge", tier: "Silver", logo: img("sp-byteforge", 300, 150) },
-    { name: "VoltEdge", tier: "Silver", logo: img("sp-voltedge", 300, 150) },
-    { name: "MakerSpace", tier: "Community", logo: img("sp-makerspace", 300, 150) },
-    { name: "OpenBotics", tier: "Community", logo: img("sp-openbotics", 300, 150) },
-  ] as Sponsor[],
-
+  
   /* ---------- join / recruitment ---------- */
   join: {
     heading: "Ready to build the future?",
