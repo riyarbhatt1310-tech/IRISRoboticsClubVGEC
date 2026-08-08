@@ -11,9 +11,6 @@ import Teams from "./components/sections/Teams";
 import Gallery from "./components/sections/Gallery";
 import Members from "./components/sections/Members";
 import Mentors from "./components/sections/Mentors";
-import Achievements from "./components/sections/Achievements";
-import Events from "./components/sections/Events";
-import Sponsors from "./components/sections/Sponsors";
 import Join from "./components/sections/Join";
 import Contact from "./components/sections/Contact";
 
@@ -32,9 +29,6 @@ export default function App() {
         <Gallery />
         <Members />
         <Mentors />
-        <Achievements />
-        <Events />
-        <Sponsors />
         <Join />
         <Contact />
       </main>
