@@ -81,9 +81,16 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-
-        {/* CTA + mobile toggle */}
-
+        {/* mobile toggle */}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => setOpen((v) => !v)}
+            className="rounded-lg p-2 text-slate-200 lg:hidden"
+            aria-label="Toggle menu"
+          >
+            {open ? <X /> : <Menu />}
+          </button>
+        </div>
       </nav>
 
       {/* mobile menu */}
