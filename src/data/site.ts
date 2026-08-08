@@ -54,26 +54,6 @@ export type Mentor = {
   department: string;
   image: string;
 };
-
-export type Achievement = {
-  year: string;
-  title: string;
-  detail: string;
-};
-
-export type EventItem = {
-  date: string; // e.g. "MAR 2026"
-  title: string;
-  type: string; // Workshop / Competition / Talk
-  description: string;
-};
-
-export type Sponsor = {
-  name: string;
-  tier: "Platinum" | "Gold" | "Silver" | "Community";
-  logo: string;
-};
-
 export type GalleryImage = { src: string; caption: string };
 
 /* helper for realistic placeholder imagery (deterministic per seed) */
