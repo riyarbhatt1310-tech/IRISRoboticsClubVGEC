@@ -83,15 +83,15 @@ const img = (seed: string, w = 800, h = 600) =>
 export const site = {
   /* ---------- identity ---------- */
   club: {
-    name: "VGEC Robotics Club",
-    shortName: "VGEC Robotics",
+    name: "IRIS Robotics Club VGEC",
+    shortName: "IRIS",
     college: "Vishwakarma Government Engineering College",
     tagline: "We Build Machines That Think.",
     heroSubtitle:
       "The official robotics club of VGEC — designing autonomous systems, competition robots, and the engineers who build them.",
-    established: "2016",
-    email: "robotics@vgec.ac.in",
-    phone: "+91 98765 43210",
+    established: "2025",
+    email: "iris.robotics.club@gmail.com",
+    phone: "+91 7203936187",
     location: "Chandkheda, Ahmedabad, Gujarat",
     // BASE_URL keeps the logo path correct at any deploy sub-path
     logo: `${import.meta.env.BASE_URL}favicon.svg`,
@@ -120,34 +120,24 @@ export const site = {
   ] as Social[],
 
   /* ---------- hero stats ---------- */
-  stats: [
-    { value: "50+", label: "Active Members" },
-    { value: "30+", label: "Projects Built" },
-    { value: "15", label: "Awards Won" },
-    { value: "8", label: "Years Running" },
-  ] as Stat[],
+  
 
   /* ---------- about ---------- */
   about: {
     heading: "Engineering the autonomous future",
     body: [
-      "VGEC Robotics Club is a student-run engineering community where curiosity turns into hardware. We bring together builders across mechanical, electronics, and software disciplines to design robots that solve real problems.",
-      "From line-followers to autonomous rovers, from national competitions to weekend hack sessions — we learn by building. No experience required, only the will to make things move.",
+      "IRIS Robotics Club VGEC is a student-run engineering community where curiosity turns into hardware. We bring together builders across mechanical, electronics, and software disciplines to design robots that solve real problems.",
+      "From line-followers to autonomous rovers,  — we learn by building. No experience required, only the will to make things move.",
     ],
     mission:
       "To make hands-on robotics accessible to every VGEC student and to compete with the best teams in the country.",
     vision:
-      "A campus where every idea can become a working machine, and every member graduates as a builder.",
+      "A platform where every idea can become a working machine, and every member graduates as a builder.",
   },
 
   /* ---------- domains / focus areas ---------- */
   domains: [
-    {
-      icon: "BrainCircuit",
-      title: "AI & Machine Learning",
-      description:
-        "Computer vision, path planning, and reinforcement learning that let our robots perceive and decide.",
-    },
+    
     {
       icon: "Cpu",
       title: "Embedded Systems",
@@ -162,22 +152,12 @@ export const site = {
     },
     {
       icon: "Bot",
-      title: "ROS2 & Autonomy",
+      title: "Software Systems",
       description:
-        "Robot Operating System pipelines for navigation, SLAM, and multi-robot coordination.",
+        "Computer vision, path planning, and reinforcement learning that let our robots perceive and decide. Robot Operating System pipelines for navigation, SLAM, and multi-robot coordination.",
     },
-    {
-      icon: "CircuitBoard",
-      title: "Electronics & PCB",
-      description:
-        "Custom circuit design, power systems, and motor drivers built from schematic to solder.",
-    },
-    {
-      icon: "Radio",
-      title: "IoT & Controls",
-      description:
-        "Wireless telemetry, remote control, and connected systems that talk to the cloud.",
-    },
+    
+    
   ] as Domain[],
 
   /* ---------- projects ---------- */

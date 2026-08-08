@@ -83,21 +83,7 @@ export default function Navbar() {
         </ul>
 
         {/* CTA + mobile toggle */}
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => go("contact")}
-            className="hidden rounded-lg bg-gradient-to-r from-brand-cyan to-brand-violet px-4 py-2 text-sm font-semibold text-ink transition-transform hover:scale-105 sm:block"
-          >
-            Join Us
-          </button>
-          <button
-            onClick={() => setOpen((v) => !v)}
-            className="rounded-lg p-2 text-slate-200 lg:hidden"
-            aria-label="Toggle menu"
-          >
-            {open ? <X /> : <Menu />}
-          </button>
-        </div>
+
       </nav>
 
       {/* mobile menu */}

@@ -101,22 +101,8 @@ export default function Hero() {
             >
               Join the club
             </a>
-          </motion.div>
 
-          {/* stats */}
-          <motion.dl
-            variants={item}
-            className="mt-12 grid max-w-lg grid-cols-2 gap-4 sm:grid-cols-4 lg:mx-0"
-          >
-            {site.stats.map((s) => (
-              <div key={s.label} className="text-center lg:text-left">
-                <dt className="font-display text-2xl font-bold text-white sm:text-3xl">
-                  {s.value}
-                </dt>
-                <dd className="mt-1 text-xs text-slate-500">{s.label}</dd>
-              </div>
-            ))}
-          </motion.dl>
+        </motion.div>
         </motion.div>
 
         {/* 3D robot */}
